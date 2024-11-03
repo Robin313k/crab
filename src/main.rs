@@ -8,10 +8,10 @@ fn main() {
         let file_path: &String = &args[1];
 
         let contents = fs::read_to_string(file_path)
-            .expect("Should have been able to read the file");
+            .expect("Crab couldn't find the specified file!");
 
         print!("{contents}");
     } else {
-        println!("No input was given, therefore Rusty cannot present it :(")
+        println!("Oh noes! No input was given, therefore crab can't present Anything :(\nDid you mean to specify a file?")
     }
 }
